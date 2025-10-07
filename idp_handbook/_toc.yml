@@ -9,6 +9,7 @@ parts:
 - caption: Example notebooks
   chapters:
   - file: notebooks/test-gtsm/gtsmip-water-levels.ipynb
+    title: GTSM water levels
 - caption: Resources
   chapters:
   - file: resources/useful_resources
