@@ -8,8 +8,11 @@ parts:
   - file: about/idp_project
 - caption: Example notebooks
   chapters:
-  - file: notebooks/c3s-training-submodule-climate-indices/gtsmip-water-levels
-    title: GTSM water levels
+  - file: notebooks/introduction
+    title: introduction
+    sections:
+    - file: notebooks/c3s-training-submodule-climate-indices/gtsmip-water-levels
+      title: GTSM water levels
 - caption: Resources
   chapters:
   - file: resources/useful_resources
