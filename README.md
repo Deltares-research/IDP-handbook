@@ -45,7 +45,7 @@ If you'd like to develop and/or build the IDP Handbook book, you should:
 4. Run `jupyter-book clean idp_handbook/` to remove any existing builds
 5. Run `jupyter-book build idp_handbook/`
 
-A fully-rendered HTML version of the book will be built in `idp_handbook/_build/html/`.
+A fully-rendered HTML version of the book will be built in `idp_handbook/_build/html/index.html`.
 
 #### Updating the book
 
