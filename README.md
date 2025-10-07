@@ -2,7 +2,7 @@
 
 Handbook for the International Delta Plaform project.
 
-The handbook is published at [https://idp-handbook.eu]
+The handbook is published at [https://deltares-research.github.io/IDP-handbook]
 
 ## Usage
 
