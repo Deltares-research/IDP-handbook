@@ -8,7 +8,7 @@ parts:
   - file: about/idp_project
 - caption: Example notebooks
   chapters:
-  - file: notebooks/notebooks
+  - file: notebooks/test-gtsm/gtsmip-water-levels.ipynb
 - caption: Resources
   chapters:
   - file: resources/useful_resources

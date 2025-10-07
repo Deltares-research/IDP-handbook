@@ -74,6 +74,6 @@ sphinx:
       use_issues_button: true
       use_repository_button: true
       repository_provider: github
-      repository_url: https://github.com/CLIMAAX/crabook
+      repository_url: https://github.com/Deltares-research/IDP-handbook
       announcement: ""
     suppress_warnings: ["mystnb.unknown_mime_type"]
