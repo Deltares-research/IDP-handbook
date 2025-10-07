@@ -1,0 +1,22 @@
+# Table of contents
+# Learn more at https://jupyterbook.org/customize/toc.html
+format: jb-book
+root: intro
+parts:
+- caption: About the project
+  chapters:
+  - file: about/idp_project
+- caption: Example notebooks
+  chapters:
+  - file: notebooks/notebooks
+- caption: Resources
+  chapters:
+  - file: resources/useful_resources
+    title: Useful resources
+    sections:
+    - file: resources/external_dashboards
+- caption: For developers
+  chapters:
+  - file: dev_tips/markdown
+  - file: dev_tips/notebooks
+  - file: dev_tips/markdown-notebooks
