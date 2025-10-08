@@ -8,7 +8,7 @@
 title                       : IDP Handbook  # The title of the book. Will be placed in the left navbar.
 author                      : Deltares  # The author of the book
 copyright                   : "2025"  # Copyright year to be placed in the footer
-logo                        : logo.png  # A path to the book logo
+logo                        : logo_temp.png  # A path to the book logo
 only_build_toc_files        : true
 
 # Force re-execution of notebooks on each build.
