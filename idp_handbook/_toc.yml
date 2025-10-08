@@ -26,6 +26,8 @@ parts:
   chapters:
   - file: tutorials/introduction
     title: Introduction
+  - file: tutorials/jupyter-notebook-template
+    title: Template
   - file: tutorials/accessing-cloud-optimized-data
     title: Cloud-optimized datasets
     sections:
