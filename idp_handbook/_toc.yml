@@ -6,13 +6,18 @@ parts:
 - caption: About the project
   chapters:
   - file: about/idp_project
-- caption: Example notebooks
+- caption: Tutorials
   chapters:
   - file: notebooks/introduction
     title: introduction
-    sections:
-    - file: notebooks/c3s-training-submodule-climate-indices/gtsmip-water-levels
-      title: GTSM water levels
+  - file: notebooks/c3s-training-submodule-climate-indices/gtsmip-water-levels
+    title: Example notebook (GTSM)
+  - file: notebooks/relative-slr
+    title: Sea level rise and subsidence
+  - file: notebooks/coastal-erosion
+    title: Coastal erosion
+  - file: notebooks/salt-intrusion
+    title: Salt intrusion
 - caption: Resources
   chapters:
   - file: resources/useful_resources
