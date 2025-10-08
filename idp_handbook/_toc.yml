@@ -1,11 +1,8 @@
 # Table of contents
 # Learn more at https://jupyterbook.org/customize/toc.html
 format: jb-book
-root: intro
+root: about/idp_project
 parts:
-- caption: About the project
-  chapters:
-  - file: about/idp_project
 - caption: Exploring coastal hazards and impacts
   chapters:
   - file: exploration/exploring-relative-sea-level-rise.md
@@ -31,20 +28,20 @@ parts:
   - file: tutorials/accessing-cloud-optimized-data
     title: Cloud-optimized datasets
     sections:
-    - file: tutorials/co-data/zarr
+    - file: tutorials/IDP-workbench/tutorials/co-data/zarr
       title: zarr
-    - file: tutorials/co-data/parquet
+    - file: tutorials/IDP-workbench/tutorials/co-data/parquet
       title: Parquet
-    - file: tutorials/co-data/co-geotiff
+    - file: tutorials/IDP-workbench/tutorials/co-data/geotiff
       title: GeoTIFF
   - file: tutorials/workflows-hazard-impact
     title: Impact assessment workflows
     sections:
-    - file: tutorials/workflows-hazard-impact/relative-slr
+    - file: tutorials/IDP-workbench/tutorials/workflows-hazard-impact/relative-slr
       title: Sea level rise and subsidence
-    - file: tutorials/workflows-hazard-impact/coastal-erosion
+    - file: tutorials/IDP-workbench/tutorials/workflows-hazard-impact/coastal-erosion
       title: Coastal erosion
-    - file: tutorials/workflows-hazard-impact/salt-intrusion
+    - file: tutorials/IDP-workbench/tutorials/workflows-hazard-impact/salt-intrusion
       title: Salt intrusion
 - caption: Resources
   chapters:

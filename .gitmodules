@@ -1,0 +1,4 @@
+[submodule "idp_handbook/tutorials/IDP-workbench"]
+	path = idp_handbook/tutorials/IDP-workbench
+	url = https://github.com/Deltares-research/IDP-workbench
+	branch = tutorials
