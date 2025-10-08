@@ -1,7 +1,7 @@
 # Table of contents
 # Learn more at https://jupyterbook.org/customize/toc.html
 format: jb-book
-root: about/idp_project
+root: intro
 parts:
 - caption: Exploring coastal hazards and impacts
   chapters:
