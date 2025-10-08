@@ -6,24 +6,50 @@ parts:
 - caption: About the project
   chapters:
   - file: about/idp_project
+- caption: Exploring coastal hazards and impacts
+  chapters:
+  - file: exploration/exploring-relative-sea-level-rise.md
+    title: Sea level rise and subsidence
+  - file: exploration/exploring-coastal-erosion.md
+    title: Coastal erosion
+  - file: exploration/exploring-salt-intrusion.md
+    title: Salt intrusion
+- caption: Datasets
+  chapters:
+  - file: datasets/idp-stac-catalog
+    title: IDP data catalog
+  - file: datasets/hazard-datasets
+    title: Hazard data
+  - file: datasets/exposure-vulnerability-datasets
+    title: Exposure and vulnerability
 - caption: Tutorials
   chapters:
-  - file: notebooks/introduction
+  - file: tutorials/introduction
     title: introduction
-  - file: notebooks/c3s-training-submodule-climate-indices/gtsmip-water-levels
-    title: Example notebook (GTSM)
-  - file: notebooks/relative-slr
-    title: Sea level rise and subsidence
-  - file: notebooks/coastal-erosion
-    title: Coastal erosion
-  - file: notebooks/salt-intrusion
-    title: Salt intrusion
+  - file: tutorials/accessing-cloud-optimized-data
+    title: Accessing cloud-optimized datasets
+    sections:
+    - file: tutorials/co-data/zarr
+      title: zarr
+    - file: tutorials/co-data/parquet
+      title: Parquet
+    - file: tutorials/co-data/co-geotiff
+      title: Cloud-optimized GeoTIFF
+  - file: tutorials/workflows-hazard-impact
+    title: Hazard and impact assessment workflows
+    sections:
+    - file: tutorials/workflows-hazard-impact/relative-slr
+      title: Sea level rise and subsidence
+    - file: tutorials/workflows-hazard-impact/coastal-erosion
+      title: Coastal erosion
+    - file: tutorials/workflows-hazard-impact/salt-intrusion
+      title: Salt intrusion
 - caption: Resources
   chapters:
   - file: resources/useful_resources
     title: Useful resources
-    sections:
-    - file: resources/external_dashboards
+    # sections:
+    # - file: resources/external_dashboards
 - caption: For developers
   chapters:
   - file: dev_tips/markdown
