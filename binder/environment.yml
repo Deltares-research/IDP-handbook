@@ -1,0 +1,9 @@
+channels:
+  - conda-forge
+dependencies:
+  - cdsapi
+  - numpy
+  - netCDF4
+  - xarray
+  - matplotlib
+  - cartopy
