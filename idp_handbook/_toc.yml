@@ -21,22 +21,22 @@ parts:
   - file: datasets/hazard-datasets
     title: Hazard data
   - file: datasets/exposure-vulnerability-datasets
-    title: Exposure and vulnerability
+    title: Exposure and vulnerability data
 - caption: Tutorials
   chapters:
   - file: tutorials/introduction
-    title: introduction
+    title: Introduction
   - file: tutorials/accessing-cloud-optimized-data
-    title: Accessing cloud-optimized datasets
+    title: Cloud-optimized datasets
     sections:
     - file: tutorials/co-data/zarr
       title: zarr
     - file: tutorials/co-data/parquet
       title: Parquet
     - file: tutorials/co-data/co-geotiff
-      title: Cloud-optimized GeoTIFF
+      title: GeoTIFF
   - file: tutorials/workflows-hazard-impact
-    title: Hazard and impact assessment workflows
+    title: Impact assessment workflows
     sections:
     - file: tutorials/workflows-hazard-impact/relative-slr
       title: Sea level rise and subsidence
