@@ -3,6 +3,10 @@
 format: jb-book
 root: intro
 parts:
+- caption: About the project
+  chapters:
+  - file: about/idp_project
+    title: International Delta Platform
 - caption: Exploring coastal hazards and impacts
   chapters:
   - file: exploration/exploring-relative-sea-level-rise.md
