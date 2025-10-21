@@ -53,7 +53,7 @@ The Python/Conda environment is needed only for building the book, so you can ac
 
 1. Edit the book's source files located in the `IDP-handbook/` directory
    ```bash
-   cd /IDP-handbook/idp_handbook
+   cd /IDP-handbook
    ```
 2. Activate the environment
    ```bash
@@ -67,6 +67,12 @@ The Python/Conda environment is needed only for building the book, so you can ac
     ```bash
    jupyter-book build idp_handbook/
     ```
+#### Integrating materials from the linked IDP-workbench repository
+The repository IDP-handbook will display selected tutorial notebooks from the [IDP-workbench repository](https://github.com/Deltares-research/IDP-workbench/blob/main/) which is linked using the git `submodule`  functionality. To pull the latest changes from the IDP-workbench into your working folder, you need to run the following command:
+```bash
+git submodule update --remote
+```
+This command will check out the latest commit from the repository (and branch) specified in `.gitmodules`
 ## Contributors
 
 We welcome and recognize all contributions. You can see a list of current contributors in the [contributors tab](https://github.com/Deltares-research/IDP-handbook/graphs/contributors).
