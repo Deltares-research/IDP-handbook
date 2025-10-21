@@ -36,8 +36,8 @@ parts:
       title: zarr
     - file: tutorials/IDP-workbench/tutorials/co-data/parquet
       title: Parquet
-    - file: tutorials/IDP-workbench/tutorials/co-data/geotiff
-      title: GeoTIFF
+    - file: tutorials/IDP-workbench/tutorials/co-data/access_stac_geotiff
+      title: STAC access and GeoTIFF
   - file: tutorials/workflows-hazard-impact
     title: Impact assessment workflows
     sections:
