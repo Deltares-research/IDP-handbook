@@ -32,7 +32,20 @@ repository:
 html:
   use_issues_button: true
   use_repository_button: true
+  analytics:
+    plausible_analytics_domain: ""
+    plausible_analytics_url: "https://plausible.io/js/script.js"
+    google_analytics_id       : ""  # A GA id that can be used to track book views.
 
+# Launch button settings
+launch_buttons:
+  notebook_interface: classic  # The interface interactive links will activate ["classic", "jupyterlab"]
+  binderhub_url: https://mybinder.org # The URL of the BinderHub (e.g., https://mybinder.org)
+  jupyterhub_url: "" # The URL of the JupyterHub (e.g., https://datahub.berkeley.edu)
+  thebe: false  # Whether to enable Thebe for live code cells (requires the repository to run on Binder)
+  colab_url: https://colab.research.google.com  # The URL of Google Colab (https://colab.research.google.com)
+  deepnote_url: "https://deepnote.com" # The URL of Deepnote (https://deepnote.com)
+  
 # Do not include these files in the build
 exclude_patterns:
   - "**.ipynb_checkpoints"
