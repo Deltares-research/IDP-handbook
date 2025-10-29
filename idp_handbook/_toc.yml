@@ -9,6 +9,20 @@ parts:
     title: International Delta Platform
   - file: about/future_water_challenges
     title: Future water challenges in deltas
+  - file: about/book_structure
+    title: Book structure
+  - file: about/acknowledgements
+    title: Acknowledgements
+- caption: Usage
+  chapters:
+  - file: usage/installation_guide
+    title: Installation Guide
+  - file: usage/getting_started
+    title: Getting started
+  - file: usage/troubleshooting
+    title: Troubleshooting
+  - file: usage/contributing
+    title: Contributing
 - caption: Exploring coastal hazards and impacts
   chapters:
   - file: exploration/exploring-relative-sea-level-rise.md
@@ -19,14 +33,17 @@ parts:
     title: Salt intrusion
   - file: exploration/exploring-risk-at-SIDS.md
     title: Risk at Small Island Developing States
-- caption: Datasets
+- caption: Data Lake
   chapters:
   - file: datasets/idp-stac-catalog
     title: IDP data catalog
-  - file: datasets/hazard-datasets
-    title: Hazard data
-  - file: datasets/exposure-vulnerability-datasets
-    title: Exposure and vulnerability data
+    sections:
+    - file: datasets/IDP_data_catalog/hazard-datasets
+      title: Hazard data
+    - file: datasets/IDP_data_catalog/exposure-vulnerability-datasets
+      title: Exposure and vulnerability data
+  - file: datasets/manual-data-ingestion
+    title: Data Ingestion manual
 - caption: Tutorials
   chapters:
   - file: tutorials/introduction
