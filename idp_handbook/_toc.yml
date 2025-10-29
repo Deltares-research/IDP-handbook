@@ -23,6 +23,10 @@ parts:
     title: Troubleshooting
   - file: usage/contributing
     title: Contributing
+- caption: Web viewer
+  chapters:
+  - file: web_viewer/idp_web_viewer
+    title: IDP Web Viewer
 - caption: Exploring coastal hazards and impacts
   chapters:
   - file: exploration/exploring-relative-sea-level-rise.md
