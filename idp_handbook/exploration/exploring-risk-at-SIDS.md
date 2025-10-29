@@ -1,8 +1,10 @@
 # Global Resilient Islands Framework
 
+<!-- For now we link to it with a button like the one below. In the future we might link interactively -->
+
 <div style="text-align:center; border:0px solid #ccc; border-radius:10px; padding:15px;">
   <a href="https://storymaps.arcgis.com/stories/ce9778b52c044c908ad1f6687a8f63ef" target="_blank" style="text-decoration:none;">
-    <img src="../images/Glo-RIF_SM.PNG" 
+    <img src="../images/Glo-RIF_SM.png" 
          alt="ArcGIS StoryMap Preview"
          style="width:100%; max-width:800px; border-radius:8px;">
     <div style="margin-top:10px;">

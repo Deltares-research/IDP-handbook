@@ -4,7 +4,7 @@
 
 <div style="text-align:center; border:0px solid #ccc; border-radius:10px; padding:15px;">
   <a href="https://themasites.pbl.nl/future-water-challenges/river-basin-delta-tool/" target="_blank" style="text-decoration:none;">
-    <img src="../images/PBL_deltas.PNG" 
+    <img src="../images/PBL_deltas.png" 
          alt="River Basin & Delta Tool Preview"
          style="width:100%; max-width:800px; border-radius:8px;">
     <div style="margin-top:10px;">
@@ -14,6 +14,9 @@
     </div>
   </a>
 </div>
+
+## Explanation
+loremipsum...
 
 <!-- PBL blocks embeddings, hence iframes do not work.. -->
 <!-- <iframe 
