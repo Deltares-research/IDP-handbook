@@ -2,7 +2,7 @@
 
 <!-- For now we link to it with a button like the one below. In the future we might link interactively -->
 
-<img alt="ArcGIS StoryMap Preview" src="../images/Glo-RIF_SM.png" class="page-main-photo" style="border-radius:8px;">
+<img alt="ArcGIS StoryMap Preview" src="../images/Glo-RIF_SM.PNG" class="page-main-photo" style="border-radius:8px;">
 
 <a href="https://storymaps.arcgis.com/stories/ce9778b52c044c908ad1f6687a8f63ef" target="_blank" style="text-decoration:none;">
     <div style="margin-top:10px; text-align:center">

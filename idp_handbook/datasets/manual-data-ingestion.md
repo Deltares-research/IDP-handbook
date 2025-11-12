@@ -48,7 +48,6 @@ The second step rather small but generic. The main aim here to check the formatt
 The third step finally merges all information from step one and two into a STAC, which is nothing more than a structured JSON file with links to where the data is stored plus some additional metadata information. The template of this STAC (collection) is already pre-specified. The only arbitrary input here relates to some dataset characteristics like file names, variables, dimensions to ignore, the front-end plot axes, etc. 
 
 <img alt="script_pipeline" src="../images/data_ingest_fig1.png" class="page-main-photo"> 
-<br><br>
 
 In the sections below, each of the above-described steps will be further detailed for an example dataset called Extreme Sea Level at different Global Warming Levels (ESLbyGWL). This dataset was published by Tebaldi et al. (2021) and is accessed [here](https://doi.org/10.1038/s41558-021-01127-1). Originally, this data comes in 25 separate CSV files which are stored on a P drive available at: ‘p:\11208003-latedeo2022\020_InternationalDeltaPortfolio\datasets\04_extreme_sea_levels_at_different_global_warming_levels\’. Scripts for adding the dataset to the STAC can be found here for each of the three steps:
 
@@ -79,12 +78,10 @@ When dealing with new datasets, it is advised to first get acquainted with the n
 The dataset example in this manual looks like the following (for Bangladesh 100yr ESL, which is one of the 25 CSV files in the ESLbyGWL dataset):
 
 <img alt="original_data_structure" src="../images/data_ingest_fig2.png" class="page-main-photo"> 
-<br><br>
 
 The first three questions above deal with checking the CF compliancy and structure of the dataset shown above. To ease this process, we have written a [Python script](https://github.com/openearth/coclicodata/blob/main/src/coclicodata/etl/cf_compliancy_checker.py) that can be imported to check CF comliancy and to save log (.check) files. This script is a wrapper around the official [cf-checker](https://github.com/cedadev/cf-checker/tree/master) that is prescribed by the [CF conventions](https://cfconventions.org/software.html). For a snip of the log file of the ESLbyGWL dataset see the figure below, in total there are 0 errors, 17 warnings, and 14 information messages.
  
 <img alt="log_file" src="../images/data_ingest_fig3.png" class="page-main-photo"> 
-<br><br>
 
 The dataset has no metadata attributes (question 1). This makes it difficult to get a sense of the data characteristics, the provider and the license for instance. Hence, we would need to add these accordingly. Furthermore, the variables are not CF compliant (17 warnings and 14 information messages, question 2). It is good practice to solve the errors as well as the warnings and to get rid of most information messages. Also, the dataset isn’t structured logically (question 3) as every GWL has a different variable per ensemble (5-percentile, mean, 95-percentile) and the files are all split per region (Bangladesh, Mekong, etc.) and return period. Typically, we would merge all this information into one file with one convenient variable that has multiple dimensions. To summarize, we would need to provide metadata, make the file CF compliant and restructure the dataset.  
 
@@ -96,18 +93,15 @@ Currently, a table with controlled vocabulary on CoCliCo (metadata) variables is
 
 The result is a dataset which is CF compliant and self-explanatory (based on metadata attributes and variables). See figure below for an impression of this dataset. As can be seen, we merged the variables with separate ensembles, regions and return periods into one variable called ‘esl’ (extreme sea level). This variable is multi-dimensional and contains four global warming levels (gwl; current, 1.5 degrees, 3.0 degrees and 5.0 degrees), three ensembles (5th-percentile, mean and 95th-percentile), 230 stations (spread over all five deltas; Bangladesh, Mekong, Mississippi, Niger and North Sea Basin) and five return periods (5, 10, 20, 50 and 100 years). The dataset is saved as NetCDF file and can be accessed here: ‘p:\11208003-latedeo2022\020_InternationalDeltaPortfolio\datasets\04_extreme_sea_levels_at_different_global_warming_levels\5DeltasESL\ESLbyGWL_CF.nc’. The CF compliancy comes back blank, i.e. 0 errors, 0 warnings and 0 information messages and can be accessed here: ‘p:\11208003-latedeo2022\020_InternationalDeltaPortfolio\datasets\CF\5DeltasESL\ESLbyGWL_CF.check’.
 
-<img alt="restruct_cf_comp_data" src="../images/data_ingest_fig4.png" class="page-main-photo"> 
-<br><br>
+<img alt="restruct_cf_comp_data" src="../images/data_ingest_fig4.png" class="page-main-photo">
 
 The last two questions of the first paragraph in this section deal with the dataset format. The desired cloud-native dataset format is dependent on the data type, in other words, how the spatial and temporal layers within the datasets look like. The flow diagram in the figure below helps to determine to desired data format for the dataset. The example dataset contains points in its spatial layer (nstations; features / vectors). Hence, without temporal layer it would be formatted to a Parquet file. However, the RP dimension contains years and hence regular / irregular timesteps. This dataset would therefore be formatted into Zarr. 
 
 The objective of STAC catalog is to facilitate data search by spatio-temporal extent. This was developed for satellite data, which typically have a specific timestamp related to the acquisition. However, at Deltares we use STAC for datasets that do not fit into this model, like average met-ocean conditions for a certain time range, or climate projections for a certain period in the future. Therefore, it is crucial to be very careful in how the time property in these situations is handled. Following the [best practices](https://github.com/radiantearth/stac-spec/blob/master/best-practices.md#stac-best-practices) it is recommended to add a ‘start_datetime’ and ’end_datetime’ in these cases. The general time property should however enable the data to show up in the right time. Sometimes averages are being used, but this is tricky as using 1950 as representative for 1900-2000 will make the item not show up when somebody searches for 1990 – 2000. When you encounter trouble in specifying the right datetime of a certain catalog, collection or item, please contact the writers of this manual for guidance. 
 
 <img alt="CF_log_file" src="../images/data_ingest_fig5.png" class="page-main-photo"> 
-<br><br>
 
 <img alt="flow_diagram_data" src="../images/data_ingest_fig6.png" class="page-main-photo"> 
-<br><br>
 
 The final result for the example in this section can be found here: ‘p:\11208003-latedeo2022\020_InternationalDeltaPortfolio\datasets\04_extreme_sea_levels_at_different_global_warming_levels\5DeltasESL\ESLbyGWL.zarr\’. Note that this a folder instead of a single file. A Zarr folder contains separate folders with dimensions, coordinates and variables of the dataset as seen in the figure above. Within these folders there are partitions of the actual dataset stored in numbered files. Besides, the attributes, metadata, group and array information are stored in hidden files. [Xarray](https://xarray.dev/) makes it easy to load Zarr folders into a single dataset again and has been used in the first script to restructure the dataset already. 
 
@@ -121,12 +115,10 @@ The additional cloud service currently exploited is [MapBox](https://www.mapbox.
 In the beginning of upload_and_generate_geojson.py file, you are required to specify some hard-coded input parameters like the Google Cloud project, the bucket and project name as well as the MapBox project. Please advise the writers of this manual if you are not sure about the storage locations. Besides this, you need to specify the cloud-native file format location and name. With all this information, the file can be checked (important in case we receive it from a third party) and uploaded to the storage bucket. See screenshot from the Google Cloud Bucket with the ESLbyGWL Zarr dataset below. 
 
 <img alt="GCS_file" src="../images/data_ingest_fig7.png" class="page-main-photo"> 
-<br><br>
 
 The code that follows all deal with transforming the Zarr file into a file format MapBox can work with. MapBox uses GeoJSON files for this purpose. However, GeoJSON’s cannot deal with nested information and hence we need to flatten the information from the CF compliant Zarr file. The flattened GeoJSON spans up the parameter space that a user can view in a web platform. The resulting GeoJSON is shown below, saved on a P drive available at ‘p:\11208003-latedeo2022\020_InternationalDeltaPortfolio\datasets\04_extreme_sea_levels_at_different_global_warming_levels\5DeltasESL\platform\ESLbyGWL_esl.geojson’ and uploaded to MapBox. Note, the below figure shows a manually adjusted snip for indicative purposes only, the actual file is a single line to save space on the disk. In MapBox, the GeoJSON looks like the image below, where all possible map variations / combinations have a separate row with values connected to it. When clicking a point in the map, the exact values for this point show up similar as in the figure below. All points for a certain combination of parameters in the front-end of a platform will be retrieved from the STAC MapBox URL. MapBox contains many more options to style tilesets like this one nicely but this is not further detailed in this manual. We stick to the vector (point) layer shown in the image below for the sake of simplicity. If you have Python 3.10 or larger, the mapboxcli package does not work properly and requires a monkey patch in its installation. See the script itself for more details on how to make this monkey patch. 
 
 <img alt="flat_geojson" src="../images/data_ingest_fig8.png" class="page-main-photo"> 
-<br><br>
 
 <img alt="mapbox" src="../images/data_ingest_fig9.png" class="page-main-photo"> 
 
@@ -154,14 +146,16 @@ For the example (ESLbyGWL) dataset in this manual, the STAC is structured like t
 <img alt="STAC_catalog" src="../images/data_ingest_fig10.png" class="page-main-photo"> 
  
 <img alt="STAC_catalog_child" src="../images/data_ingest_fig10_2.png" class="page-main-photo"> 
-<br><br> 
+
+
 
 <img alt="STAC_collection" src="../images/data_ingest_fig11.png" class="page-main-photo"> 
 
 <img alt="STAC_collection_child" src="../images/data_ingest_fig11_2.png" class="page-main-photo"> 
 
 <img alt="STAC_collection_asset" src="../images/data_ingest_fig11_3.png" class="page-main-photo"> 
-<br><br> 
+
+
 
 <img alt="STAC_item" src="../images/data_ingest_fig12.png" class="page-main-photo"> 
 

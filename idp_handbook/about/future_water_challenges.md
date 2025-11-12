@@ -2,7 +2,7 @@
 
 <!-- For now we link to it with a button like the one below. In the future we might take over from PBL or link interactively -->
 
-<img alt="River Basin & Delta Tool Preview" src="../images/PBL_deltas.png" class="page-main-photo" style="border-radius:8px;">
+<img alt="River Basin & Delta Tool Preview" src="../images/PBL_deltas.PNG" class="page-main-photo" style="border-radius:8px;">
 
 <a href="https://themasites.pbl.nl/future-water-challenges/river-basin-delta-tool/" target="_blank" style="text-decoration:none;">
     <div style="margin-top:10px; text-align:center">
