@@ -68,8 +68,8 @@ parts:
   - file: tutorials/workflows-hazard-impact
     title: Impact assessment workflows
     sections:
-    - file: tutorials/IDP-workbench/tutorials/workflows-hazard-impact/cc-he-food
-      title: Climate change and human effects on food production
+    #- file: tutorials/IDP-workbench/tutorials/workflows-hazard-impact/cc-he-food
+    #  title: Climate change and human effects on food production
     - file: tutorials/IDP-workbench/tutorials/workflows-hazard-impact/salt-intrusion
       title: Effects of salinity on households
     - file: tutorials/IDP-workbench/tutorials/workflows-hazard-impact/coastal-erosion
