@@ -29,7 +29,7 @@ parts:
     title: IDP Web Viewer
 - caption: Exploring coastal hazards and impacts
   chapters:
-  - file: exploration/expolring-cc-and-human-effects.md
+  - file: exploration/exploring-cc-and-human-effects.md
     title: Climate change and human effects on food production
   - file: exploration/exploring-salt-intrusion.md
     title: Effects of salinity on households
