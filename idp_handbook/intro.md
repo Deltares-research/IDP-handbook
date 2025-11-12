@@ -4,5 +4,24 @@ The International Delta Platform (IDP) is a project which falls under Moonshot 1
 
 <img alt="IDP" src="images/MS1.png" class="page-main-photo">
 
-## How to use this Handbook
-loremipsum...
+## Vision
+
+Instead of one web viewer with a giant map and lots of datasets we opt for storytelling in a news-style format, exploration tools focused on specific workflows and dashboards tailored to real user questions. 
+
+> This isn’t about limiting what users can see, it about focus, clarity and better communication
+
+### Unique selling points
+
+- Attractive visual usage for quote’s
+- Climate services as consultancy
+- Community building
+- Usable for large spectrum of users (researchers to policy makers)
+- Re-use project code and methods
+- FAIR data integration
+- Co-design / co-develop framework
+- Pay-and-play principle (when generalized)
+- Faster project execution
+- Easier dissimination
+
+
+
