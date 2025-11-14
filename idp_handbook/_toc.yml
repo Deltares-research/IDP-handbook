@@ -54,17 +54,12 @@ parts:
   chapters:
   - file: tutorials/introduction
     title: Introduction
-  - file: tutorials/jupyter-notebook-template
-    title: Template
-  - file: tutorials/accessing-cloud-optimized-data
-    title: Cloud-optimized datasets
-    sections:
-    - file: tutorials/IDP-workbench/tutorials/co-data/access_stac_geotiff
-      title: STAC access and GeoTIFF
-    - file: tutorials/IDP-workbench/tutorials/co-data/zarr
-      title: zarr
-    - file: tutorials/IDP-workbench/tutorials/co-data/parquet
-      title: Parquet
+  - file: tutorials/IDP-workbench/tutorials/co-data/access_stac_geotiff
+    title: Working with GeoTIFF
+  - file: tutorials/IDP-workbench/tutorials/co-data/zarr
+    title: Working with zarr
+  - file: tutorials/IDP-workbench/tutorials/co-data/access_stac_parquet
+    title: Working with GeoParquet
   - file: tutorials/workflows-hazard-impact
     title: Impact assessment workflows
     sections:
