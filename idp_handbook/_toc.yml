@@ -45,7 +45,7 @@ parts:
     title: Introduction
   - file: tutorials/IDP-workbench/tutorials/co-data/access_stac_geotiff
     title: Working with GeoTIFF
-  - file: tutorials/IDP-workbench/tutorials/co-data/zarr
+  - file: tutorials/IDP-workbench/tutorials/co-data/access_stac_zarr
     title: Working with zarr
   - file: tutorials/IDP-workbench/tutorials/co-data/access_stac_parquet
     title: Working with GeoParquet
