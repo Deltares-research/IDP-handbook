@@ -39,17 +39,6 @@ parts:
     title: Sea level rise and subsidence hotspots
   - file: exploration/exploring-risk-at-SIDS.md
     title: Coastal risk at Small Island Developing States
-- caption: Data Lake
-  chapters:
-  - file: datasets/idp-stac-catalog
-    title: IDP data catalog
-    sections:
-    - file: datasets/IDP_data_catalog/hazard-datasets
-      title: Hazard data
-    - file: datasets/IDP_data_catalog/exposure-vulnerability-datasets
-      title: Exposure and vulnerability data
-  - file: datasets/manual-data-ingestion
-    title: Data Ingestion manual
 - caption: Tutorials
   chapters:
   - file: tutorials/introduction
@@ -71,6 +60,17 @@ parts:
       title: Assets at risk of future erosion
     - file: tutorials/IDP-workbench/tutorials/workflows-hazard-impact/relative-slr
       title: Sea level rise and subsidence hotspots
+- caption: Data Lake
+  chapters:
+  - file: datasets/idp-stac-catalog
+    title: IDP data catalog
+    sections:
+    - file: datasets/IDP_data_catalog/hazard-datasets
+      title: Hazard data
+    - file: datasets/IDP_data_catalog/exposure-vulnerability-datasets
+      title: Exposure and vulnerability data
+  - file: datasets/manual-data-ingestion
+    title: Data Ingestion manual
 - caption: Resources
   chapters:
   - file: resources/useful_resources
