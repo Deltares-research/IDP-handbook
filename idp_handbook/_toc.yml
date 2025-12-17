@@ -18,7 +18,7 @@ parts:
   - file: exploration/exploring-cc-and-human-effects.md
     title: Climate change and human effects on food production
   - file: exploration/exploring-salt-intrusion.md
-    title: Effects of salinity on households
+    title: Effects of salinity intrusion on rice production
   - file: exploration/exploring-coastal-erosion.md
     title: Assets at risk of future erosion
   - file: exploration/exploring-relative-sea-level-rise.md
