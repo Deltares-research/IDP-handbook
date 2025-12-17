@@ -62,10 +62,10 @@ parts:
       title: Exposure and vulnerability data
   - file: datasets/manual-data-ingestion
     title: Data Ingestion manual
-- caption: Resources
-  chapters:
-  - file: resources/useful_resources
-    title: Useful resources
+# - caption: Resources
+#   chapters:
+#   - file: resources/useful_resources
+#     title: Useful resources
     # sections:
     # - file: resources/external_dashboards
 # - caption: For developers
