@@ -10,7 +10,7 @@
 * Sepehr Eslami Arab
 
 ## Contributors
-We welcome and recognize all contributions, please see a guideline on how to contribute [**here**](contribute) section. You can see a list of current contributors in
+We welcome and recognize all contributions, please see a guideline on how to contribute [**here**](../tutorials/how-to/contributing) section. You can see a list of current contributors in
 the [contributors
 tab](https://github.com/Deltares-research/IDP-handbook/graphs/contributors).
 

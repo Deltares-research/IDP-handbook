@@ -1,5 +1,7 @@
 # Future water challenges in deltas
 
+The River Basin & Delta Tool by PBL provides an overview of the current and future challenges in deltas, we encourage you to explore this tool through the link below:
+
 <!-- For now we link to it with a button like the one below. In the future we might take over from PBL or link interactively -->
 
 <img alt="River Basin & Delta Tool Preview" src="../images/PBL_deltas.PNG" class="page-main-photo" style="border-radius:8px;">
@@ -11,9 +13,6 @@
       </button>
     </div>
 </a>
-
-## Explanation
-loremipsum...
 
 <!-- PBL blocks embeddings, hence iframes do not work.. -->
 <!-- <iframe 

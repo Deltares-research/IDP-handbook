@@ -1,0 +1,2 @@
+# Getting started
+In the following sections you will find instructions on executing the tutorials, as well as what to do in case of issues and how you can contribute to the tutorials collection in this handbook.

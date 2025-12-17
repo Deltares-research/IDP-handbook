@@ -10,23 +10,9 @@ parts:
   - file: about/future_water_challenges
     title: Future water challenges in deltas
   - file: about/book_structure
-    title: Book structure
+    title: Handbook structure
   - file: about/acknowledgements
     title: Acknowledgements
-- caption: Usage
-  chapters:
-  - file: usage/installation_guide
-    title: Installation Guide
-  - file: usage/getting_started
-    title: Getting started
-  - file: usage/troubleshooting
-    title: Troubleshooting
-  - file: usage/contributing
-    title: Contributing
-- caption: Web viewer
-  chapters:
-  - file: web_viewer/idp_web_viewer
-    title: IDP Web Viewer
 - caption: Exploring coastal hazards and impacts
   chapters:
   - file: exploration/exploring-cc-and-human-effects.md
@@ -39,28 +25,33 @@ parts:
     title: Sea level rise and subsidence hotspots
   - file: exploration/exploring-risk-at-SIDS.md
     title: Coastal risk at Small Island Developing States
+- caption: Web viewer
+  chapters:
+  - file: web_viewer/idp_web_viewer
+    title: IDP Web Viewer
 - caption: Tutorials
   chapters:
   - file: tutorials/introduction
     title: Introduction
-  - file: tutorials/IDP-workbench/tutorials/co-data/access_stac_geotiff
-    title: Working with GeoTIFF
-  - file: tutorials/IDP-workbench/tutorials/co-data/access_stac_zarr
-    title: Working with zarr
-  - file: tutorials/IDP-workbench/tutorials/co-data/access_stac_parquet
-    title: Working with GeoParquet
-  - file: tutorials/workflows-hazard-impact
-    title: Impact assessment workflows
+  - file: tutorials/how-to/getting_started
+    title: Getting started & how-to
     sections:
-    #- file: tutorials/IDP-workbench/tutorials/workflows-hazard-impact/cc-he-food
-    #  title: Climate change and human effects on food production
-    - file: tutorials/IDP-workbench/tutorials/workflows-hazard-impact/salt-intrusion
-      title: Effects of salinity on households
-    - file: tutorials/IDP-workbench/tutorials/workflows-hazard-impact/coastal-erosion
-      title: Assets at risk of future erosion
-    - file: tutorials/IDP-workbench/tutorials/workflows-hazard-impact/relative-slr
-      title: Sea level rise and subsidence hotspots
-- caption: Data Lake
+    - file: tutorials/how-to/installation_guide
+      title: Installation Guide
+    - file: tutorials/how-to/troubleshooting
+      title: Troubleshooting
+    - file: tutorials/how-to/contributing
+      title: Contributing
+  - file: tutorials/data_access_tutorials
+    title: Data access tutorials
+    sections:
+    - file: tutorials/IDP-workbench/tutorials/co-data/access_stac_geotiff
+      title: GeoTIFF - sea level rise
+    - file: tutorials/IDP-workbench/tutorials/co-data/access_stac_zarr
+      title: zarr - weather and climate
+    - file: tutorials/IDP-workbench/tutorials/co-data/access_stac_parquet
+      title: GeoParquet - critical infrastructure
+- caption: Data catalog
   chapters:
   - file: datasets/idp-stac-catalog
     title: IDP data catalog
